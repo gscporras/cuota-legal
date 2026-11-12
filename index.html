@@ -3,96 +3,205 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cuota · Política de privacidad</title>
+<title>Fina · Política de privacidad</title>
+<meta name="description" content="Política de privacidad de Fina: qué datos usa, para qué, dónde se guardan y cómo borrarlos.">
 <style>
-  :root { --bg: #fbfaf7; --fg: #1d1c1a; --muted: #5f5c55; --line: #e4e0d8; --accent: #1f6b4f; }
+  :root { --bg: #f7f6f2; --card: #ffffff; --fg: #17171a; --muted: #5f5e66; --line: #e6e4dd; --accent: #3d3bb0; --soft: #ecebfa; }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #161614; --fg: #ecebe6; --muted: #a8a59c; --line: #33322e; --accent: #7fcfa9; }
+    :root { --bg: #0e0e12; --card: #1a1a20; --fg: #f2f2f5; --muted: #a6a6ae; --line: #2a2a32; --accent: #a9a8f0; --soft: #26254f; }
   }
   * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
   body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
-  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 8px; }
-  h2 { font-size: 1.15rem; margin: 36px 0 8px; }
-  p, li { color: var(--fg); }
+  main { max-width: 700px; margin: 0 auto; padding: 32px 16px 72px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 28px; }
+  .brand { display: flex; align-items: center; gap: 10px; font: 600 1.6rem/1 Georgia, "Times New Roman", serif; letter-spacing: -0.02em; }
+  .brand svg { width: 34px; height: 34px; }
+  nav.langs { display: flex; gap: 6px; }
+  nav.langs a { text-decoration: none; color: var(--fg); border: 1px solid var(--line); background: var(--card); border-radius: 999px; padding: 6px 14px; font-size: 0.9rem; font-weight: 600; }
+  nav.langs a:hover { border-color: var(--accent); }
+  section { padding-top: 8px; }
+  section + section { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 40px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.01em; }
+  h2 { font-size: 1.1rem; margin: 32px 0 8px; }
   ul { padding-left: 1.2em; }
-  li { margin: 4px 0; }
-  .meta { color: var(--muted); margin: 0 0 28px; }
-  .summary { border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; }
-  .summary p { margin: 0 0 8px; font-weight: 600; }
+  li { margin: 6px 0; }
+  .meta { color: var(--muted); margin: 0 0 24px; }
+  .summary { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 18px 22px; }
+  .summary p { margin: 0 0 8px; font-weight: 700; color: var(--accent); }
   a { color: var(--accent); }
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.9rem; }
 </style>
 </head>
 <body>
 <main>
-  <h1>Política de privacidad de Cuota</h1>
-  <p class="meta">Vigente desde el 31 de octubre de 2026</p>
+<header>
+  <div class="brand" aria-label="Fina">
+    <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="23.0" fill="#2A2880"/><path fill="#FFFFFF" d="M53.00,46.00 C56.00,34.00 52.00,24.00 42.00,19.00 C56.00,18.00 68.00,28.00 66.00,42.00 C65.00,47.00 60.00,50.00 53.00,46.00 Z M54.73,51.62 C67.07,50.76 75.35,43.87 77.01,32.81 C82.29,45.82 76.49,60.32 62.55,62.74 C57.49,63.34 53.09,59.51 54.73,51.62 Z M49.92,55.00 C54.55,66.47 63.66,72.21 74.69,70.38 C63.96,79.42 48.37,78.38 41.76,65.88 C39.63,61.24 41.91,55.88 49.92,55.00 Z M45.22,51.47 C35.74,59.42 33.10,69.86 38.25,79.78 C26.34,72.36 22.51,57.22 32.35,47.07 C36.10,43.61 41.91,44.12 45.22,51.47 Z M47.12,45.91 C36.64,39.35 25.89,40.06 18.05,48.03 C21.42,34.41 34.64,26.08 47.34,32.31 C51.78,34.81 53.09,40.49 47.12,45.91 Z"/></svg>
+    fina
+  </div>
+  <nav class="langs" aria-label="Idioma / Language / Idioma">
+    <a href="#es" hreflang="es">Español</a><a href="#en" hreflang="en">English</a><a href="#pt" hreflang="pt-BR">Português</a>
+  </nav>
+</header>
 
+<section id="es" lang="es">
+  <h1>Política de privacidad de Fina</h1>
+  <p class="meta">Vigente desde el 12 de noviembre de 2026</p>
   <div class="summary">
     <p>En pocas palabras</p>
     <ul>
-      <li>Tus cobros, pedidos, las personas a quienes cobras y tus pagos se guardan solo en tu celular. No tenemos cuentas ni recibimos esos datos.</li>
-      <li>Para mejorar la app, enviamos datos de uso anónimos (qué pantallas y botones usas) y reportes de errores. Nunca nombres, celulares, montos exactos ni el texto de tus avisos. Puedes apagarlo en Ajustes.</li>
-      <li>Solo lee los avisos de pago de Yape, Plin y apps bancarias, para saber quién te pagó.</li>
-      <li>Nunca pide tus claves ni entra a tus cuentas bancarias.</li>
-      <li>Si desinstalas Cuota, tus datos se borran.</li>
+      <li>Lo que anotas (gastos, tu plan, tus metas) se guarda en tu teléfono. Si entras con tu cuenta de Google, también se respalda en la nube para que no lo pierdas y lo veas en tu otro teléfono.</li>
+      <li>Si le hablas a Fina, el reconocimiento de voz lo hace el sistema de tu teléfono. Fina no guarda el audio: solo el texto que confirmas.</li>
+      <li>En un espacio compartido, los demás miembros ven lo que anotas en ese espacio, tu nombre y tu aporte. Nunca tus gastos personales, tu plan ni tus metas.</li>
+      <li>Para mejorar la app enviamos datos de uso anónimos y reportes de errores. Puedes apagarlo en Ajustes.</li>
+      <li>No vendemos datos, no mostramos publicidad y no usamos el identificador de publicidad.</li>
     </ul>
   </div>
 
   <h2>Quién es responsable</h2>
-  <p>Cuota es una app desarrollada por Giancarlo Campomanes, en Lima, Perú. Si tienes dudas sobre esta política, escribe a <a href="mailto:gscporras@gmail.com">gscporras@gmail.com</a>.</p>
+  <p>Fina es una app de Giancarlo Campomanes, en Lima, Perú. Dudas o pedidos: <a href="mailto:gscporras@gmail.com">gscporras@gmail.com</a>.</p>
 
-  <h2>Qué datos usa Cuota</h2>
+  <h2>Qué datos usa Fina y para qué</h2>
   <ul>
-    <li><strong>Avisos de pago.</strong> Si activas la lectura de pagos, Cuota recibe las notificaciones de tu celular, pero solo procesa las que parecen un pago de Yape, Plin o un banco. De esas guarda la app que las envió, el título, el texto (que incluye el nombre de quien pagó y el monto) y la hora. Las demás notificaciones, como chats o correos, se descartan en el momento y no se guardan.</li>
-    <li><strong>Las personas a quienes cobras.</strong> El nombre, el celular, el monto y el día de pago que tú escribes o eliges de tus contactos. Cuota no pide permiso para leer tu agenda: Android solo le pasa el contacto que tú eliges.</li>
-    <li><strong>Tus pedidos.</strong> El cliente, su celular si lo agregas, qué lleva, el total y si ya lo entregaste. Igual que las personas, solo se guardan en tu celular.</li>
-    <li><strong>Tus ajustes.</strong> Tu nombre, qué cobras y tu número de Yape o Plin, para armar los recordatorios.</li>
-    <li><strong>Registro de avisos.</strong> Para ayudarte a revisar si un pago se leyó bien, Cuota conserva los últimos 60 avisos de pago que recibió.</li>
-    <li><strong>Datos de uso y errores.</strong> Qué pantallas abres y qué botones tocas (por ejemplo, «abrió Pagos» o «envió un recordatorio»), datos generales del celular (modelo, versión de Android, idioma, país aproximado), un identificador aleatorio de la instalación y, si la app falla, el detalle técnico del error. Las cantidades van en rangos (por ejemplo, «entre S/ 50 y S/ 99» o «de 3 a 5 personas»), nunca exactas.</li>
+    <li><strong>Lo que anotas:</strong> monto, descripción, categoría y fecha de cada gasto o ingreso; tu plan del mes (ingreso, gastos fijos, ahorro); tus metas; las conversaciones con Fina. Sirven para calcular cuánto puedes gastar, responder tus preguntas y mostrar tus avances.</li>
+    <li><strong>Tu cuenta (opcional):</strong> si entras con Google, tu nombre, tu correo y un identificador de usuario. Sirven para respaldar y sincronizar tus datos.</li>
+    <li><strong>Voz (opcional):</strong> al tocar el micrófono, el reconocedor de voz del sistema (Android o iOS) convierte lo que dices en texto, en el teléfono cuando el idioma lo permite. En algunos casos el sistema puede procesarlo en los servidores de Google o Apple según sus propias políticas. Fina no recibe ni guarda el audio.</li>
+    <li><strong>Espacios compartidos (opcional):</strong> el nombre del espacio, los miembros (nombre, color y aporte), lo que cada uno anota en el espacio y si está en línea o escribiendo. Lo ven solo los miembros de ese espacio. Los códigos de invitación vencen a los 7 días.</li>
+    <li><strong>Datos de uso y errores (opcional):</strong> qué pantallas y botones usas, datos generales del teléfono (modelo, versión, idioma, país aproximado), un identificador aleatorio de la instalación y, si la app falla, el detalle técnico del error. Nunca nombres, montos exactos ni lo que escribes.</li>
+    <li><strong>Notificaciones:</strong> para avisarte (recordatorios y novedades) usamos un identificador de notificaciones del teléfono.</li>
   </ul>
-
-  <h2>Para qué los usa</h2>
-  <p>Para que la app funcione: marcar quién te pagó, calcular cuánto falta cobrar, avisarte de pagos y atrasos, y armar los recordatorios.</p>
-  <p>Los datos de uso y errores sirven solo para mejorar Cuota: saber qué funciones se usan, dónde se traba la gente, si el lector entiende los avisos de cada banco y corregir fallos. No hacemos publicidad, ni perfiles para anunciantes, ni vendemos datos. Cuota no usa el identificador de publicidad de tu celular.</p>
+  <p>Fina no lee tus notificaciones, tus contactos ni tus cuentas bancarias.</p>
 
   <h2>Dónde se guardan</h2>
-  <p>Tus cobros, personas, pagos, ajustes y el registro de avisos se guardan en el almacenamiento privado de Cuota en tu celular. La app no tiene cuentas y desactiva la copia de seguridad automática de Android, así que esos datos no se suben a la nube.</p>
-  <p>Los datos de uso y errores se envían a Google Analytics para Firebase y Firebase Crashlytics, servicios de Google que los procesan en sus servidores, que pueden estar fuera del Perú. Google los guarda hasta 14 meses (uso) y 90 días (errores). Consulta <a href="https://firebase.google.com/support/privacy">cómo trata Firebase los datos</a>.</p>
-
-  <h2>Cuándo salen de tu celular</h2>
-  <p>Además de los datos de uso y errores (que puedes apagar), solo cuando tú lo decides:</p>
   <ul>
-    <li><strong>Recordatorios por WhatsApp.</strong> Al tocar «Recordar», Cuota abre WhatsApp con un mensaje listo. Tú decides si lo envías, y se envía desde tu WhatsApp.</li>
-    <li><strong>Exportar a CSV o compartir un historial.</strong> El archivo va a la app que tú elijas.</li>
-  </ul>
-  <p>Lo que hagan WhatsApp u otras apps con esos mensajes se rige por sus propias políticas.</p>
-
-  <h2>Pagos de la suscripción</h2>
-  <p>Si te suscribes a Cuota Pro, el pago lo procesa Google Play. Nosotros no vemos tu tarjeta ni tus datos de pago; Google solo le dice a la app si la suscripción está activa. Consulta la <a href="https://policies.google.com/privacy">política de privacidad de Google</a>.</p>
-
-  <h2>Permisos que pide la app</h2>
-  <ul>
-    <li><strong>Acceso a notificaciones</strong>, para leer los avisos de pago. Es opcional: puedes usar Cuota marcando los pagos a mano, y puedes quitar el acceso cuando quieras en los ajustes de Android.</li>
-    <li><strong>Enviar notificaciones</strong>, para avisarte cuando alguien te paga y del resumen diario.</li>
-    <li><strong>Iniciar al encender el celular</strong>, solo para volver a programar el resumen diario.</li>
-    <li><strong>Acceso a internet</strong>, solo para enviar los datos de uso y errores, y para las compras en Google Play.</li>
+    <li>En el almacenamiento privado de Fina en tu teléfono.</li>
+    <li>Si entras con Google o usas espacios: en Firebase Realtime Database (Google Cloud, Estados Unidos). Las reglas de la base solo te dejan leer tus datos a ti, y los de un espacio a sus miembros.</li>
+    <li>Datos de uso y errores: Google Analytics para Firebase y Firebase Crashlytics.</li>
   </ul>
 
-  <h2>Cómo apagar los datos de uso</h2>
-  <p>En Cuota, ve a Ajustes &gt; Privacidad y apaga «Ayudar a mejorar Cuota». Desde ese momento la app deja de enviar datos de uso y errores. También puedes apagarlo en el último paso de la bienvenida.</p>
+  <h2>Con quién se comparten</h2>
+  <p>Con nadie más que los proveedores que hacen funcionar la app (Google Firebase) y, en un espacio, con los miembros que tú invitaste. No vendemos ni alquilamos datos.</p>
 
-  <h2>Cuánto tiempo se guardan y cómo borrarlos</h2>
-  <p>Los datos de tu celular se quedan ahí mientras uses la app. Puedes eliminar a una persona desde su detalle en la app. Para borrar todo, desinstala Cuota o ve a Ajustes de Android &gt; Apps &gt; Cuota &gt; Almacenamiento &gt; Borrar datos.</p>
-
-  <h2>Tus derechos</h2>
-  <p>De acuerdo con la Ley N.º 29733, Ley de Protección de Datos Personales del Perú, puedes acceder a tus datos, corregirlos, cancelarlos u oponerte a su uso. Lo que está en tu celular lo manejas directamente desde la app, y puedes oponerte a los datos de uso apagándolos en Ajustes. Para borrar los datos de uso ya enviados, escríbenos. Si necesitas ayuda, escríbenos a <a href="mailto:gscporras@gmail.com">gscporras@gmail.com</a>.</p>
+  <h2>Cuánto tiempo y cómo borrarlos</h2>
+  <ul>
+    <li>Sin cuenta: se borran al desinstalar la app.</li>
+    <li>Con cuenta: en Ajustes → Eliminar cuenta se borran tus datos de la nube y tu usuario. También puedes pedirlo por correo.</li>
+    <li>Al salir de un espacio dejas de verlo; lo que anotaste ahí queda para los demás miembros.</li>
+  </ul>
 
   <h2>Menores de edad</h2>
-  <p>Cuota está pensada para adultos que cobran pagos mensuales. No está dirigida a menores de 13 años.</p>
+  <p>Fina está pensada para mayores de 18 años.</p>
 
-  <h2>Cambios a esta política</h2>
-  <p>Si cambiamos cómo Cuota usa tus datos, actualizaremos esta página y la fecha de arriba. Si el cambio es importante, también te avisaremos dentro de la app.</p>
+  <h2>Cambios</h2>
+  <p>Si cambiamos esta política, lo diremos en la app y aquí, con la nueva fecha.</p>
+</section>
+
+<section id="en" lang="en">
+  <h1>Fina Privacy Policy</h1>
+  <p class="meta">Effective November 12, 2026</p>
+  <div class="summary">
+    <p>In short</p>
+    <ul>
+      <li>What you record (expenses, your plan, your goals) is stored on your phone. If you sign in with your Google account, it's also backed up in the cloud so you don't lose it and can see it on your other phone.</li>
+      <li>If you talk to Fina, speech recognition is done by your phone's system. Fina doesn't keep the audio: only the text you confirm.</li>
+      <li>In a shared space, other members see what you record in that space, your name and your contribution. Never your personal spending, your plan or your goals.</li>
+      <li>To improve the app we send anonymous usage data and crash reports. You can turn this off in Settings.</li>
+      <li>We don't sell data, show ads or use the advertising identifier.</li>
+    </ul>
+  </div>
+
+  <h2>Who is responsible</h2>
+  <p>Fina is an app by Giancarlo Campomanes, in Lima, Peru. Questions or requests: <a href="mailto:gscporras@gmail.com">gscporras@gmail.com</a>.</p>
+
+  <h2>What data Fina uses and why</h2>
+  <ul>
+    <li><strong>What you record:</strong> amount, description, category and date of each expense or income; your monthly plan (income, fixed costs, savings); your goals; your conversations with Fina. Used to calculate how much you can spend, answer your questions and show your progress.</li>
+    <li><strong>Your account (optional):</strong> if you sign in with Google, your name, email and a user ID. Used to back up and sync your data.</li>
+    <li><strong>Voice (optional):</strong> when you tap the microphone, the system speech recognizer (Android or iOS) turns what you say into text, on the phone when the language allows it. In some cases the system may process it on Google's or Apple's servers under their own policies. Fina doesn't receive or keep the audio.</li>
+    <li><strong>Shared spaces (optional):</strong> the space name, its members (name, color and contribution), what each one records in the space, and whether they're online or typing. Only that space's members see it. Invite codes expire after 7 days.</li>
+    <li><strong>Usage and crash data (optional):</strong> which screens and buttons you use, general device data (model, version, language, approximate country), a random installation ID and, if the app crashes, the technical details. Never names, exact amounts or what you type.</li>
+    <li><strong>Notifications:</strong> to remind you and share news we use your phone's notification identifier.</li>
+  </ul>
+  <p>Fina doesn't read your notifications, contacts or bank accounts.</p>
+
+  <h2>Where it's stored</h2>
+  <ul>
+    <li>In Fina's private storage on your phone.</li>
+    <li>If you sign in with Google or use spaces: in Firebase Realtime Database (Google Cloud, United States). Database rules only let you read your own data, and a space's data only its members.</li>
+    <li>Usage and crash data: Google Analytics for Firebase and Firebase Crashlytics.</li>
+  </ul>
+
+  <h2>Who it's shared with</h2>
+  <p>Nobody other than the providers that make the app work (Google Firebase) and, in a space, the members you invited. We don't sell or rent data.</p>
+
+  <h2>Retention and deletion</h2>
+  <ul>
+    <li>Without an account: deleted when you uninstall the app.</li>
+    <li>With an account: Settings → Delete account removes your cloud data and your user. You can also ask by email.</li>
+    <li>When you leave a space you stop seeing it; what you recorded there stays for the other members.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Fina is intended for people 18 and older.</p>
+
+  <h2>Changes</h2>
+  <p>If we change this policy, we'll say so in the app and here, with the new date.</p>
+</section>
+
+<section id="pt" lang="pt-BR">
+  <h1>Política de privacidade da Fina</h1>
+  <p class="meta">Em vigor desde 12 de novembro de 2026</p>
+  <div class="summary">
+    <p>Em poucas palavras</p>
+    <ul>
+      <li>O que você anota (gastos, seu plano, suas metas) fica no seu celular. Se você entrar com sua conta do Google, também tem backup na nuvem para não perder e ver no seu outro celular.</li>
+      <li>Se você falar com a Fina, o reconhecimento de voz é feito pelo sistema do seu celular. A Fina não guarda o áudio: só o texto que você confirma.</li>
+      <li>Num espaço compartilhado, os outros membros veem o que você anota nesse espaço, seu nome e sua contribuição. Nunca seus gastos pessoais, seu plano nem suas metas.</li>
+      <li>Para melhorar o app enviamos dados de uso anônimos e relatórios de erros. Você pode desligar isso nos Ajustes.</li>
+      <li>Não vendemos dados, não mostramos anúncios e não usamos o identificador de publicidade.</li>
+    </ul>
+  </div>
+
+  <h2>Quem é responsável</h2>
+  <p>A Fina é um app de Giancarlo Campomanes, em Lima, Peru. Dúvidas ou pedidos: <a href="mailto:gscporras@gmail.com">gscporras@gmail.com</a>.</p>
+
+  <h2>Quais dados a Fina usa e para quê</h2>
+  <ul>
+    <li><strong>O que você anota:</strong> valor, descrição, categoria e data de cada gasto ou receita; seu plano do mês (renda, gastos fixos, poupança); suas metas; as conversas com a Fina. Servem para calcular quanto você pode gastar, responder suas perguntas e mostrar seu progresso.</li>
+    <li><strong>Sua conta (opcional):</strong> se você entrar com o Google, seu nome, seu e-mail e um identificador de usuário. Servem para fazer backup e sincronizar seus dados.</li>
+    <li><strong>Voz (opcional):</strong> ao tocar no microfone, o reconhecedor de voz do sistema (Android ou iOS) transforma o que você diz em texto, no celular quando o idioma permite. Em alguns casos o sistema pode processar nos servidores do Google ou da Apple, segundo as políticas deles. A Fina não recebe nem guarda o áudio.</li>
+    <li><strong>Espaços compartilhados (opcional):</strong> o nome do espaço, os membros (nome, cor e contribuição), o que cada um anota no espaço e se está online ou digitando. Só os membros desse espaço veem. Os códigos de convite expiram em 7 dias.</li>
+    <li><strong>Dados de uso e erros (opcional):</strong> quais telas e botões você usa, dados gerais do celular (modelo, versão, idioma, país aproximado), um identificador aleatório da instalação e, se o app falhar, o detalhe técnico do erro. Nunca nomes, valores exatos nem o que você escreve.</li>
+    <li><strong>Notificações:</strong> para avisar você (lembretes e novidades) usamos um identificador de notificações do celular.</li>
+  </ul>
+  <p>A Fina não lê suas notificações, seus contatos nem suas contas bancárias.</p>
+
+  <h2>Onde ficam guardados</h2>
+  <ul>
+    <li>No armazenamento privado da Fina no seu celular.</li>
+    <li>Se você entrar com o Google ou usar espaços: no Firebase Realtime Database (Google Cloud, Estados Unidos). As regras da base só deixam você ler seus dados, e os de um espaço só os membros.</li>
+    <li>Dados de uso e erros: Google Analytics para Firebase e Firebase Crashlytics.</li>
+  </ul>
+
+  <h2>Com quem são compartilhados</h2>
+  <p>Com ninguém além dos fornecedores que fazem o app funcionar (Google Firebase) e, num espaço, com os membros que você convidou. Não vendemos nem alugamos dados.</p>
+
+  <h2>Por quanto tempo e como apagar</h2>
+  <ul>
+    <li>Sem conta: são apagados ao desinstalar o app.</li>
+    <li>Com conta: em Ajustes → Excluir conta seus dados da nuvem e seu usuário são apagados. Você também pode pedir por e-mail.</li>
+    <li>Ao sair de um espaço você deixa de vê-lo; o que você anotou ali fica para os outros membros.</li>
+  </ul>
+
+  <h2>Menores de idade</h2>
+  <p>A Fina é pensada para maiores de 18 anos.</p>
+
+  <h2>Mudanças</h2>
+  <p>Se mudarmos esta política, avisaremos no app e aqui, com a nova data.</p>
+</section>
+
+<footer>© 2026 Fina · Lima, Perú</footer>
 </main>
 </body>
 </html>
